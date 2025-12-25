@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Student Speaking Assessment Report</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Speaking Assessment Report</h1>
+
+    <!-- Overall Score -->
+    <div class="card">
+      <h2>Overall Score</h2>
+      <p class="overall-score"><span id="overallScore"></span> / 9</p>
+    </div>
+
+    <!-- Skill Scores -->
+    <div class="card">
+      <h2>Skill-wise Scores</h2>
+
+      <div class="skill">
+        <span>Pronunciation</span>
+        <div class="bar"><div id="pronunciation"></div></div>
+      </div>
+
+      <div class="skill">
+        <span>Fluency</span>
+        <div class="bar"><div id="fluency"></div></div>
+      </div>
+
+      <div class="skill">
+        <span>Vocabulary</span>
+        <div class="bar"><div id="vocabulary"></div></div>
+      </div>
+
+      <div class="skill">
+        <span>Grammar</span>
+        <div class="bar"><div id="grammar"></div></div>
+      </div>
+    </div>
+
+    <!-- Chart -->
+    <div class="card">
+      <h2>Score Chart</h2>
+      <canvas id="scoreChart"></canvas>
+    </div>
+
+    <!-- Feedback -->
+    <div class="card">
+      <h2>Descriptive Feedback</h2>
+      <p id="feedbackText"></p>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
